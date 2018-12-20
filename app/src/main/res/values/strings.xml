@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PakistanCitizenPortal</string>
+    <string name="title_activity_main_activity">main_activity</string>
+    <string-array name="Departments">
+        <item>Computer Science</item>
+        <item>Electrical </item>
+        <item>BBA</item>
+        <item>Admin</item>
+        <item>Faculty</item>
+    </string-array>
+    <string-array name="Categories">
+        <item>Electrical</item>
+        <item>Plumbing </item>
+        <item>Cleaning</item>
+        <item>Examination</item>
+        <item>Digital Equipment</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>

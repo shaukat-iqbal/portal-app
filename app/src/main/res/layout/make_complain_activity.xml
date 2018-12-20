@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".make_complain_activity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+<ScrollView
+    android:id="@+id/scroll"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Category"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:entries="@array/Categories"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Department"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:entries="@array/Departments"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Room No:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/roomNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Complain Description"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:gravity="top"
+        android:textSize="14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Location"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lines="4"
+        android:textSize="14dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="makeComplain"
+        android:layout_margin="15dp"/>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

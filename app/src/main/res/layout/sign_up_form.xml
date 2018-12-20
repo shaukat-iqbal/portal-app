@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:padding="20dp"
+   android:gravity="center" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   >
+    <TextView
+
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Cnic:"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="fill"
+        android:layout_columnWeight="1"/>
+
+    <EditText
+        android:tooltipText="must contain 13 digits"
+        android:id="@+id/cnic"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="1"
+        android:padding="10dp"
+
+        android:text="Name :"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="fill"
+        android:layout_columnWeight="1"/>
+
+    <EditText
+
+        android:id="@+id/name"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp" />
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:padding="10dp"
+        android:text="Email:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="fill"
+        android:layout_columnWeight="1"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="150dp"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:padding="10dp"
+        android:text="Password:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp"
+        android:tooltipText="must contain atleast 6 letters"/>
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_column="0"
+       android:layout_row="4"
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:padding="10dp"
+        android:text="Phone:"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="150dp"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:text="City:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="fill"
+        android:layout_columnWeight="1"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="150dp"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:layout_columnWeight="1"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:text="Passport#:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="fill"
+        android:layout_columnWeight="1"/>
+
+    <EditText
+        android:id="@+id/passport"
+        android:layout_width="150dp"
+        android:layout_row="6"
+        android:layout_rowSpan="0"
+        android:layout_column="1"
+        android:layout_columnWeight="1" />
+
+</GridLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:indeterminate="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:onClick="signUp">
+
+
+    </Button>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

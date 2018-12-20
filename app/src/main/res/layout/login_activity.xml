@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".loginActivity"
+
+    android:layout_gravity="center"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#000"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="CNIC:"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cnic"
+                android:layout_column="1"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:layout_column="0"
+                android:layout_columnWeight="0.5"
+                android:gravity="center"
+                android:text="Password:"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_column="1"
+                android:layout_columnWeight="1.5"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center"
+                android:layout_margin="23dp"
+                android:onClick="signIn"
+                android:text="Sign in"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:gravity="right"
+                android:onClick="resetPassword"
+                android:text="forgot password?"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:gravity="left"
+                android:onClick="createAccount"
+                android:text="Create Account"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </GridLayout>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
