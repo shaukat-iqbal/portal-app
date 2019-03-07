@@ -146,6 +146,7 @@ public class Authenticate extends AsyncTask<String ,Void, String> {
         } catch (IOException e) {
             e.printStackTrace();
         }
+         // I have changed it
 
         return "Error: something went wrong pease check your connection";
     }
